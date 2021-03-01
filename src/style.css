@@ -18,10 +18,21 @@ body {
     color: #333333;
 }
 
+a {
+    color: #278AFF;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a :hover {
+    text-decoration: underline;
+}
+
 h2 {
     font-size: 48px;
     font-weight: 700;
     margin: 0;
+    padding-bottom: 32px;
 }
 
 .wrapper {
@@ -44,9 +55,19 @@ main {
 }
 
 .header {
-    background-color: #F8F6F7;
+    background-image: url("./img/bg.png");
     position: relative;
     overflow: hidden;
+}
+
+.header h1 {
+    font-size: 48px;
+    padding-bottom: 16px;
+    margin: 0;
+}
+
+.header p {
+    margin: 0;
 }
 
 .header .container {
@@ -101,6 +122,22 @@ main {
 .about {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.about p {
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.about-short {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.about-details {
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .about-descr {
@@ -112,6 +149,30 @@ main {
     max-width: 442px;
     width: 100%;
     text-align: right;
+}
+
+.benefit {
+    text-align: center;
+}
+
+.benefit-img {
+    vertical-align: "center";
+    height: 48px;
+    margin-bottom: 30px;
+}
+
+.benefit-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-bottom: 8px;
+}
+
+.benefit-descr {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0 30px 0;
 }
 
 .btn {
