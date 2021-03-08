@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>  
         
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
@@ -27,7 +28,8 @@
                         </nav>
 
                         <div class="header__phone">
-                            Номер телефона
+                            <p class="header__number">8 (499) 686-17-62</p>
+                            <p class="header__workinghours">с 10.00 до 19.00 без выходных</p>
                         </div>
                     </div>
 
@@ -46,49 +48,65 @@
                     </div>
                 </div>
 
-                <div class="header-girl">
-                    <img src="./img/header-bg.png" alt="">
+                <div class="header__girl header-girl">
+                    <img class="header-girl__img" src="./img/header-bg.png" alt="">
                 </div>
             </header>
             <main class="main">
                 <section class="section">
                     <div class="container">
-                        <h2>О салоне</h2>
+                        <h2 class="section__title">О салоне</h2>
                         <div class="about">
-                            <div class="about-descr">
-                                <p class="about-short">
+                            <div class="about__descr">
+                                <p class="about__short">
                                     Мир красоты - это уютный салон в самом центре города. Здесь работают профессиональные визажисты, стилисты и мастера татуажа
                                 </p>
-                                <p class="about-details">
+                                <p class="about__details">
                                     Красота и хороший уход никогда не выходят из моды. Мы приглашаем Вас в место, где гармония обретает форму, а внешность становится отражением внутреннего мира. Новая жизнь начинается с небольших изменений. Мы помогаем нашим клиентам воплотить их индивидуальность во внешнем облике. Мы создаем стиль – вместе с Вами и для Вас.
                                 </p>
-                                <a class="about-link" href="#">Развернуть</a>
+                                <a class="about__link" href="#">Развернуть</a>
                             </div>
-                            <div class="about-video">
+                            <div class="about__video">
                                 <img src="./img/img_video.png" alt="">
                             </div>
                         </div>
-                        <div class="row benefits">
+                        <div class="row benefits benefits__list">
                             <div class="col benefit">
-                                <div class="benefit-img">
+                                <div class="benefit__img">
                                     <img src="img/mirror.png">
                                 </div>
-                                <div class="benefit-title">Удобные кабинеты</div>
-                                <div class="benefit-descr">Комфорт и стиль - принцип создания кабинетов салона красоты. Только эстетика и удобство для Вас</div>
+                                <div class="benefit__title">Удобные кабинеты</div>
+                                <div class="benefit__descr">Комфорт и стиль - принцип создания кабинетов салона красоты. Только эстетика и удобство для Вас</div>
                             </div>
                             <div class="col benefit">
-                                <div class="benefit-img">
+                                <div class="benefit__img">
                                     <img src="img/cosmetic.png">
                                 </div>
-                                <div class="benefit-title">Качественная косметика</div>
-                                <div class="benefit-descr">Используем профессиональные материалы высшего качества лучших брендов</div>
+                                <div class="benefit__title">Качественная косметика</div>
+                                <div class="benefit__descr">Используем профессиональные материалы высшего качества лучших брендов</div>
                             </div>
                             <div class="col benefit">
-                                <div class="benefit-img">
+                                <div class="benefit__img">
                                     <img src="img/scissors.png">
                                 </div>
-                                <div class="benefit-title">Опытные мастера</div>
-                                <div class="benefit-descr">Работают только опытные мастера с чувством стиля. Смотрите наших специалистов в разделе <a href="#">Мастера</a></div>
+                                <div class="benefit__title">Опытные мастера</div>
+                                <div class="benefit__descr">Работают только опытные мастера с чувством стиля. Смотрите наших специалистов в разделе <a href="#">Мастера</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="container">
+                        <h2 class="section__title">Популярные услуги</h2>
+                        <div class="row services services__list">
+                            <div class="col col-4 service">
+                                <div class="service__img">
+                                    <img src="img/service_img.png">
+                                </div>
+                                <div class="service__title">Маникюр</div>
+                                <div class="service__descr">Аппаратный, комбинированный или классический.</div>
+                                <button class="btn btn_small service__btn">Записаться</button>
                             </div>
                         </div>
                     </div>
