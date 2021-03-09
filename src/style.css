@@ -20,13 +20,15 @@ body {
 }
 
 a {
-    color: #278AFF;
+    color: #333333;
     font-style: normal;
     text-decoration: none;
+    font-weight: 500;
 }
 
-a :hover {
-    text-decoration: underline;
+a:hover {
+    text-decoration: none;
+    color: #00BF78;
 }
 
 h2 {
@@ -268,6 +270,87 @@ main {
 
 .navigation__item:not(:last-child) {
     margin-right: 28px;
+}
+
+/* Services */
+
+.service__img {
+    padding-bottom: 20px;
+}
+
+.service__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 8px;
+}
+
+.service__descr {
+    font-size: 12px;
+    line-height: 20px;
+    padding-bottom: 16px;
+}
+
+.service__btn {
+    margin-bottom: 48px;
+}
+
+/* Price */
+
+.price {
+
+}
+
+.price__tab-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: 27px;
+    padding-bottom: 51px;
+}
+
+.price__tab-item {
+    padding-bottom: 6px;
+}
+
+.price__tab-item:first-child {
+    border-bottom: 2px solid #00BF78;
+}
+
+.price__tab-item:not(:last-child) {
+    margin-right: 28px;
+}
+
+.price__tab-link {
+    font-size: 14px;
+}
+
+.price__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 0 8px;
+    margin: 0;
+}
+
+.price__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 0 36px;
+    margin: 0;
+}
+
+.price__cost {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #00BF78;
 }
 
 @media screen and (max-width: 768px) {
