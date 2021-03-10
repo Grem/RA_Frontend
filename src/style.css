@@ -384,6 +384,50 @@ main {
     background-size: cover;
     border-radius: 8px;
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.master-card__photo::before,
+.master-card__photo::after { 
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .3s opacity;
+    position: absolute;
+}
+
+.master-card__photo::before {
+    content: '';
+    right: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 1;
+}
+
+.master-card__photo:hover::before {
+    opacity: 0.5;
+}
+
+.master-card__photo:hover::after {
+    opacity: 1;
+}
+
+.master-card__photo::after {
+    content: 'Записаться к мастеру';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    display: flex;
+    max-width: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
 
 .master-card__name {
