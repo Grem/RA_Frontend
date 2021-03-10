@@ -91,12 +91,20 @@ main {
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(50%);
+    z-index: 4;
+}
+
+.social {
+    list-style: none;
+}
+
+.social__item {
+    padding-bottom: 20px;
 }
 
 .header__girl {
     position: absolute;
-    right: 90px;
+    right: 190px;
     bottom: 0;
     z-index: 1;
     opacity: 1;
@@ -172,6 +180,10 @@ main {
 
 .section__title {
     padding: 50px 0;
+}
+
+.section__masters {
+    background: #F8F6F7;
 }
 
 .about {
@@ -352,6 +364,50 @@ main {
     line-height: 24px;
     color: #00BF78;
 }
+
+/* Masters */
+
+.masters p {
+    margin: 0;
+}
+
+.masters__description {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 24px;
+}
+
+.master-card__photo {
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.master-card__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 8px;
+}
+
+.master-card__post {
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 20px;
+}
+
+.master-card__expirience {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    padding-bottom: 80px;
+}
+
+/* Works */
 
 @media screen and (max-width: 768px) {
     .header__girl {
