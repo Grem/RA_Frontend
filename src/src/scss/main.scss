@@ -79,19 +79,87 @@ main {
     padding: 30px 0 130px;
 }
 
-.header__top {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 136px;
-    position: relative;
-    z-index: 3;
-}
+.header {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 136px;
+        position: relative;
+        z-index: 3;
+    }
 
-.header__social {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    z-index: 4;
+    &__social {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: 4;
+    }
+
+    &__girl {
+        position: absolute;
+        right: 190px;
+        bottom: 0;
+        z-index: 1;
+        opacity: 1;
+        transition: 0.3s opacity;
+    }
+
+    &-girl {
+        max-width: 524px;
+        width: 100%;
+        z-index: 0;
+    }
+
+    &-girl img {
+        position: relative;
+        z-index: 1;
+        display: block;
+    }
+
+    &-girl:before {
+        content: '';
+        height: 472px;
+        width: 472px;
+        background-color: #FB9475;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -110px;
+        z-index: 0;
+        right: 0;
+    }
+
+    &__phone {
+        text-align: right;
+    }
+
+    &__number {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 14px;
+        padding-bottom: 8px;
+    }
+
+    &__workinghours {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    &__logo {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 700;
+        color: #333333;
+    }
+
+    &_nav {
+        /*margin*/
+        /*padding*/
+        /*width*/
+        /*height*/
+        /*position*/
+        margin-bottom: 30px;
+    }
 }
 
 .social {
@@ -100,56 +168,6 @@ main {
 
 .social__item {
     padding-bottom: 20px;
-}
-
-.header__girl {
-    position: absolute;
-    right: 190px;
-    bottom: 0;
-    z-index: 1;
-    opacity: 1;
-    transition: 0.3s opacity;
-}
-
-.header-girl {
-    max-width: 524px;
-    width: 100%;
-    z-index: 0;
-}
-
-.header-girl img {
-    position: relative;
-    z-index: 1;
-    display: block;
-}
-
-.header-girl:before {
-    content: '';
-    height: 472px;
-    width: 472px;
-    background-color: #FB9475;
-    display: block;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -110px;
-    z-index: 0;
-    right: 0;
-}
-
-.header__phone {
-    text-align: right;
-}
-
-.header__number {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 14px;
-    padding-bottom: 8px;
-}
-
-.header__workinghours {
-    font-size: 11px;
-    line-height: 14px;
 }
 
 .hero__subtitle {
@@ -246,22 +264,6 @@ main {
 }
 
 /* Navigation */
-
-.header_nav {
-    /*margin*/
-    /*padding*/
-    /*width*/
-    /*height*/
-    /*position*/
-    margin-bottom: 30px;
-}
-
-.header__logo {
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: 700;
-    color: #333333;
-}
 
 .navigation__list {
     list-style: none;
