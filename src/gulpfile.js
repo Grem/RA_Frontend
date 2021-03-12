@@ -4,6 +4,8 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 const browserSync = require('browser-sync').create();
+const sourcemaps = require('gulp-sourcemaps');
+const del = require('del');
 
 function browsersync() {
   browserSync.init({
@@ -15,7 +17,9 @@ function browsersync() {
 // Компиляция файла в css
 function buildSass() {
   return src("src/scss/**/*.scss")
+    .pipe(sourcemaps.init())
     .pipe(sass())
+    .on('error', sass.logError)
     .pipe(
       postcss([
         autoprefixer({
@@ -25,6 +29,7 @@ function buildSass() {
         cssnano(),
       ])
     )
+    .pipe(sourcemaps.write('.'))
     .pipe(dest("dist/css"))
     .pipe(dest("src/css"))
     .pipe(browserSync.stream());
@@ -41,4 +46,15 @@ function serve() {
   watch('src/**/*.html', html)
 }
 
+function copy() {
+  return src(['src/img/**/*.*', 'src/css/**/*.css'], {
+    base: 'src/',
+  }).pipe(dest('dist'));
+}
+
+function cleanDist() {
+  return del('dist/**/*', { force: true });
+}
+
+exports.build = series(cleanDist, buildSass, html, copy);
 exports.default = series(buildSass, parallel(browsersync, serve));
