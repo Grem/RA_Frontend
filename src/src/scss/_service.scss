@@ -1,0 +1,22 @@
+.service {
+    &__img {
+        padding-bottom: 20px;
+    }
+    
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 8px;
+    }
+    
+    &__descr {
+        font-size: 12px;
+        line-height: 20px;
+        padding-bottom: 16px;
+    }
+    
+    &__btn {
+        margin-bottom: 48px;
+    }    
+}
