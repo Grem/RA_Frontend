@@ -114,6 +114,58 @@ main {
 
 @media screen and (max-width: 768px) {
     .header__girl {
-        opacity: 0.5;
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__hero {
+        text-align: center;
+    }
+
+    .header__social {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 0px;
+    }
+
+    .social__item {
+        padding: 0px 15px 0px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about__video {
+        text-align: center;
+    }
+
+    .about__descr {
+        text-align: justify;
+        width: fit-content;
+    }
+
+    .service__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .service__img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service__item {
+        max-width: 320px;
+    }
+
+    .service__descr {
+        text-align: justify;
     }
 }

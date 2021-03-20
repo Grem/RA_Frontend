@@ -1,4 +1,15 @@
 .service {
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 350px;
+        margin-right: 20px;
+    }
+
     &__img {
         padding-bottom: 20px;
     }
