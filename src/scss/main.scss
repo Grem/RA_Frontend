@@ -8,6 +8,7 @@
 @import 'service';
 @import 'benefit';
 @import 'works';
+@import 'contacts';
 
 * {
     box-sizing: border-box;
@@ -87,7 +88,7 @@ main {
     font-weight: 500;
 
     &_large {
-        width: 203px;
+        min-width: 203px;
         height: 48px;
         font-size: 14px;
         line-height: 14px;

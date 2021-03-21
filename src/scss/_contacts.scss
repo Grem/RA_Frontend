@@ -1,0 +1,101 @@
+.contacts {
+    background-color: #F8F6F7;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    &__form {
+        max-width: 445px;
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 40px;
+        padding: 40px 35px 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+    }
+
+    &__form-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 14px;
+        padding-bottom: 15px;
+    }
+
+    &__form-descr {
+        font-size: 14px;
+        line-height: 20px;
+        padding-bottom: 35px;
+    }
+
+    & input {
+        height: 44px;
+        border: 1px solid #D8D8D8;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        padding-left: 16px;
+    }
+
+    &__form-button {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    &__form-policy {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        margin-top: 78px;
+    }
+
+    &__data-title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        margin-bottom: 20px;
+    }
+
+    &__data-address {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__data-phone {
+        font-size: 16px;
+        line-height: 14px;
+        margin-bottom: 20px;
+    }
+
+    &__data-email {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 32px;
+    }
+
+    &__data-social {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 14px;
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    &__social li {
+        margin-right: 28px;
+    }
+
+}
