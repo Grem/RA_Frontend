@@ -366,23 +366,20 @@
         </div>
     </body>
     <script>
-        const form = document.getElementsByTagName('form');
+        const form = document.getElementById('contacts-form');
 
-        document.addEventListener("DOMContentLoaded", () => {
-            form.addEventListener('submit', event => {
-                event.preventDefault();
+        form.addEventListener('submit', event => {
+            event.preventDefault();
 
-                const {name, phone} = form.elements;
+            const {name, phone} = form.elements;
 
-                const formData = {
-                    name: name.value,
-                    phone: phone.value
-                };
-            });
-
+            const formData = {
+                name: name.value,
+                phone: phone.value
+            };
+            
             console.log(formData);
         });
-
 
     </script>
 </html>
