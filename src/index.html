@@ -363,4 +363,24 @@
             </footer>
         </div>
     </body>
+    <script>
+        const form = document.getElementsByTagName('form');
+
+        document.addEventListener("DOMContentLoaded", () => {
+            form.addEventListener('submit', event => {
+                event.preventDefault();
+
+                const {name, phone} = form.elements;
+
+                const formData = {
+                    name: name.value,
+                    phone: phone.value
+                };
+            });
+
+            console.log(formData);
+        });
+
+
+    </script>
 </html>
