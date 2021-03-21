@@ -1,0 +1,124 @@
+.works {
+    &__carousel {
+        overflow: hidden;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 100px;
+        width: fit-content;
+    }
+
+    &__item {
+        height: 338px;
+        width: 338px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    &__item::before,
+    &__item::after { 
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: .3s opacity;
+        position: absolute;
+    }
+
+    &__item::before {
+        content: '';
+        right: 0;
+        left: 0;
+        background-color: #000;
+        z-index: 1;
+    }
+    
+    &__item:hover {
+        height: 358px;
+        width: 358px;
+        margin: 0px;
+        transition: .3s height width;
+    }
+
+    &__item:hover::before {
+        opacity: 0.5;
+    }
+    
+    &__item:hover::after {
+        opacity: 1;
+    }
+    
+    &__item::after {
+        content: url(/img/lens.png) "Увеличить";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        display: flex;
+        max-width: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    &__btns {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-bottom: 60px;
+    }
+
+    &__btn {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    &__btn:hover {
+        background-color: #F8F6F7;
+        cursor: pointer;
+    }
+
+    &__btn img {
+        display: block;
+        margin: auto;
+    }
+
+    &__brends-title {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 50px;
+    }
+
+    &__brends-list {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    &__brends-item {
+        display: flex;
+        padding-right: 50px;
+        opacity: 0.5;
+    }
+
+    &__brends-item img {
+        display: block;
+        margin: auto;
+    }
+}
