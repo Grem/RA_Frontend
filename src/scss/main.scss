@@ -114,6 +114,10 @@ main {
 /* Works */
 
 @media screen and (max-width: 768px) {
+    .header__hamburger {
+        display: block;
+    }
+    
     .header__girl {
         display: none;
     }
@@ -124,6 +128,12 @@ main {
 
     .header__hero {
         text-align: center;
+    }
+
+    .header__logo {
+        margin: auto;
+        transform: translateX(30%);
+        font-size: 30px;
     }
 
     .header__social {
