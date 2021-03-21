@@ -29,5 +29,26 @@
     
     &__btn {
         margin-bottom: 48px;
-    }    
+    }  
+    
+    @media screen and (max-width: 768px) {
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    
+        &__img img {
+            width: 100%;
+            height: auto;
+        }
+    
+        &__item {
+            max-width: 320px;
+        }
+    
+        &__descr {
+            text-align: justify;
+        }
+    }
 }

@@ -26,4 +26,20 @@
         width: 100%;
         text-align: right;
     }
+
+    @media screen and (max-width: 768px) {
+        & {
+            flex-direction: column-reverse;
+        }
+    
+        &__video {
+            text-align: center;
+        }
+    
+        &__descr {
+            text-align: justify;
+            width: fit-content;
+        }
+    }
+    
 }

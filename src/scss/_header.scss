@@ -107,4 +107,39 @@
         /*position*/
         margin-bottom: 30px;
     }
+
+    @media screen and (max-width: 768px) {
+        &__hamburger {
+            display: block;
+        }
+        
+        &__girl {
+            display: none;
+        }
+    
+        &__nav {
+            display: none;
+        }
+    
+        &__hero {
+            text-align: center;
+        }
+    
+        &__logo {
+            margin: auto;
+            transform: translateX(30%);
+            font-size: 30px;
+        }
+    
+        &__social {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding: 0px;
+        }
+    
+        .social__item {
+            padding: 0px 15px 0px;
+        }
+    }
 }
