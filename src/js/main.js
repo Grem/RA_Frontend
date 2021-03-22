@@ -24,4 +24,6 @@ $(function() {
         prevArrow: $("#prevButton"),
         nextArrow: $("#nextButton")
     });
+
+    new window.TabsManager(document.querySelector('.tabs'));
 });

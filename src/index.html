@@ -19,6 +19,7 @@
         
         <link rel="stylesheet" href="./css/main.css">
         <script src="./js/main.js"></script>
+        <script src="./js/tabs.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -162,79 +163,81 @@
                 <section class="section">
                     <div class="container">
                         <h2 class="section__title">Услуги и цены</h2>
-                        <div class="price">
-                            <div class="price__tab-navigation">
-                                <div class="price__tab-item"><a href="#" class="price__tab-link">Стрижка и укладка</a></div>
-                                <div class="price__tab-item"><a href="#" class="price__tab-link">Косметология</a></div>
-                                <div class="price__tab-item"><a href="#" class="price__tab-link">Маникюр и педикюр</a></div>
-                                <div class="price__tab-item"><a href="#" class="price__tab-link">Макияж</a></div>
-                                <div class="price__tab-item"><a href="#" class="price__tab-link">Брови и ресницы</a></div>
-                                <div class="price__tab-item"><a href="#" class="price__tab-link">Массаж</a></div>
+                        <div id="price" class="price tabs">
+                            <div class="price__tab-navigation tabs__links">
+                                <div class="price__tab-item">Стрижка и укладка</div>
+                                <div class="price__tab-item">Косметология</div>
+                                <div class="price__tab-item">Маникюр и педикюр</div>
+                                <div class="price__tab-item">Макияж</div>
+                                <div class="price__tab-item">Брови и ресницы</div>
+                                <div class="price__tab-item">Массаж</div>
                             </div>
-
-                            <div class="row price__list">
-                                <div class="col col-6 price__item">
-                                    <div class="price__description">
-                                        <p class="price__title">Женская стрижка</p>
-                                        <p class="price__subtitle">Короткие волосы</p>
+                            <div class="tabs__content">
+                                <div class="row price__list tabs__item">
+                                    
+                                    <div class="col col-6 price__item">
+                                        <div class="price__description">
+                                            <p class="price__title">Женская стрижка</p>
+                                            <p class="price__subtitle">Короткие волосы</p>
+                                        </div>
+                                        <div class="price__cost">1200 ₽</div>
                                     </div>
-                                    <div class="price__cost">1200 ₽</div>
+
                                 </div>
-
-                                <div class="col col-6 price__item">
-                                    <div class="price__description">
-                                        <p class="price__title">Стрижка бороды и усов</p>
-                                        <p class="price__subtitle">Короткие волосы</p>
+                                <div class="row price__list tabs__item">
+                                    
+                                    <div class="col col-6 price__item">
+                                        <div class="price__description">
+                                            <p class="price__title">Прическа вечерняя (свадебная)</p>
+                                            <p class="price__subtitle">Короткие волосы</p>
+                                        </div>
+                                        <div class="price__cost">1200 ₽</div>
                                     </div>
-                                    <div class="price__cost">1200 ₽</div>
+                                    
                                 </div>
-
-                                <div class="col col-6 price__item">
-                                    <div class="price__description">
-                                        <p class="price__title">Мужская стрижка</p>
-                                        <p class="price__subtitle">Короткие волосы</p>
+                                <div class="row price__list tabs__item">
+                                    
+                                    <div class="col col-6 price__item">
+                                        <div class="price__description">
+                                            <p class="price__title">Креативный Стиль</p>
+                                            <p class="price__subtitle">Короткие волосы</p>
+                                        </div>
+                                        <div class="price__cost">1200 ₽</div>
                                     </div>
-                                    <div class="price__cost">1200 ₽</div>
+                                    
                                 </div>
-
-                                <div class="col col-6 price__item">
-                                    <div class="price__description">
-                                        <p class="price__title">Экспресс укладка</p>
-                                        <p class="price__subtitle">Короткие волосы</p>
+                                <div class="row price__list tabs__item">
+                                    
+                                    <div class="col col-6 price__item">
+                                        <div class="price__description">
+                                            <p class="price__title">Укладка дневная</p>
+                                            <p class="price__subtitle">Короткие волосы</p>
+                                        </div>
+                                        <div class="price__cost">1200 ₽</div>
                                     </div>
-                                    <div class="price__cost">1200 ₽</div>
+                                    
                                 </div>
-
-                                <div class="col col-6 price__item">
-                                    <div class="price__description">
-                                        <p class="price__title">Детский Стиль</p>
-                                        <p class="price__subtitle">Короткие волосы</p>
+                                <div class="row price__list tabs__item">
+                                    
+                                    <div class="col col-6 price__item">
+                                        <div class="price__description">
+                                            <p class="price__title">Детский Стиль</p>
+                                            <p class="price__subtitle">Короткие волосы</p>
+                                        </div>
+                                        <div class="price__cost">1200 ₽</div>
                                     </div>
-                                    <div class="price__cost">1200 ₽</div>
+                                    
                                 </div>
-
-                                <div class="col col-6 price__item">
-                                    <div class="price__description">
-                                        <p class="price__title">Укладка дневная</p>
-                                        <p class="price__subtitle">Короткие волосы</p>
+                                <div class="row price__list tabs__item">
+                                    
+                                    <div class="col col-6 price__item">
+                                        <div class="price__description">
+                                            <p class="price__title">Детский Стиль</p>
+                                            <p class="price__subtitle">Короткие волосы</p>
+                                        </div>
+                                        <div class="price__cost">1200 ₽</div>
                                     </div>
-                                    <div class="price__cost">1200 ₽</div>
-                                </div>
-
-                                <div class="col col-6 price__item">
-                                    <div class="price__description">
-                                        <p class="price__title">Креативный Стиль</p>
-                                        <p class="price__subtitle">Короткие волосы</p>
-                                    </div>
-                                    <div class="price__cost">1200 ₽</div>
-                                </div>
-
-                                <div class="col col-6 price__item">
-                                    <div class="price__description">
-                                        <p class="price__title">Прическа вечерняя (свадебная)</p>
-                                        <p class="price__subtitle">Короткие волосы</p>
-                                    </div>
-                                    <div class="price__cost">1200 ₽</div>
+                                    
                                 </div>
                             </div>
                         </div>
