@@ -4,11 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>  
-        
+    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/main.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -365,21 +369,4 @@
             </footer>
         </div>
     </body>
-    <script>
-        const form = document.getElementById('contacts-form');
-
-        form.addEventListener('submit', event => {
-            event.preventDefault();
-
-            const {name, phone} = form.elements;
-
-            const formData = {
-                name: name.value,
-                phone: phone.value
-            };
-            
-            console.log(formData);
-        });
-
-    </script>
 </html>
