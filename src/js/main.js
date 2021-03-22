@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+$(function() {
     const form = document.getElementById('contacts-form');
 
     form.addEventListener('submit', SendData);
@@ -16,4 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
         form.reset();
         console.log(formData);
     }
+
+    $('#carousel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $("#prevButton"),
+        nextArrow: $("#nextButton")
+    });
 });
