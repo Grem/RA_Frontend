@@ -10,6 +10,10 @@
     &__tab-item {
         padding-bottom: 6px;
     }
+
+    &__tab-item:hover {
+        cursor: pointer;
+    }
     
     &__tab-item:not(:last-child) {
         margin-right: 28px;

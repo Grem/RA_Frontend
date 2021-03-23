@@ -1,3 +1,5 @@
+import TabsManager from './tabs.js'
+
 $(function() {
     const form = document.getElementById('contacts-form');
 
