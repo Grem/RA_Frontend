@@ -10,9 +10,9 @@
     &__tab-item {
         padding-bottom: 6px;
     }
-    
-    &__tab-item:first-child {
-        border-bottom: 2px solid #00BF78;
+
+    &__tab-item:hover {
+        cursor: pointer;
     }
     
     &__tab-item:not(:last-child) {
@@ -24,6 +24,7 @@
     }
     
     &__item {
+        font-size: 14px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
