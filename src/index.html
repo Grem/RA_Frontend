@@ -15,6 +15,21 @@
             <header class="header">
                 <div class="container">
                     <div class="header__top">
+                        <div id="myNav" class="overlay">
+  
+                            <!-- Button to close the overlay navigation -->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            
+                            <!-- Overlay content -->
+                            <div class="overlay-content">
+                              <a href="#">Услуши и цены</a>
+                              <a href="#">Мастера</a>
+                              <a href="#">Наши работы</a>
+                              <a href="#">Контакты</a>
+                            </div>
+                            
+                        </div>
+
                         <div onclick="openNav()" class="header__hamburger">&#9776;</div>
 
                         <a class="logo header__logo" href="/">Мир Красоты</a>
@@ -365,4 +380,13 @@
             </footer>
         </div>
     </body>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
 </html>
