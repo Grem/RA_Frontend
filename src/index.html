@@ -15,6 +15,23 @@
             <header class="header">
                 <div class="container">
                     <div class="header__top">
+                        <div id="myNav" class="overlay">
+  
+                            <!-- Button to close the overlay navigation -->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            
+                            <!-- Overlay content -->
+                            <div class="overlay-content">
+                              <a href="#price" onclick="closeNav()">Услуги и цены</a>
+                              <a href="#masters" onclick="closeNav()">Мастера</a>
+                              <a href="#works" onclick="closeNav()">Наши работы</a>
+                              <a href="#contacts" onclick="closeNav()">Контакты</a>
+                            </div>
+                            
+                        </div>
+
+                        <div onclick="openNav()" class="header__hamburger">&#9776;</div>
+
                         <a class="logo header__logo" href="/">Мир Красоты</a>
 
                         <nav class="navigation header__nav">
@@ -98,9 +115,9 @@
                 <section class="section">
                     <div class="container">
                         <h2 class="section__title">Популярные услуги</h2>
-                        <div class="row services services__list">
+                        <div class="services service__list">
 
-                            <div class="col col-4 service">
+                            <div class="service__item">
                                 <div class="service__img">
                                     <img src="img/service_img.png">
                                 </div>
@@ -109,7 +126,7 @@
                                 <button class="btn btn_small service__btn">Записаться</button>
                             </div>
 
-                            <div class="col col-4 service">
+                            <div class="service__item">
                                 <div class="service__img">
                                     <img src="img/service_img.png">
                                 </div>
@@ -118,7 +135,7 @@
                                 <button class="btn btn_small service__btn">Записаться</button>
                             </div>
 
-                            <div class="col col-4 service">
+                            <div class="service__item">
                                 <div class="service__img">
                                     <img src="img/service_img.png">
                                 </div>
@@ -127,7 +144,7 @@
                                 <button class="btn btn_small service__btn">Записаться</button>
                             </div>
 
-                            <div class="col col-4 service">
+                            <div class="service__item">
                                 <div class="service__img">
                                     <img src="img/service_img.png">
                                 </div>
@@ -136,7 +153,7 @@
                                 <button class="btn btn_small service__btn">Записаться</button>
                             </div>
 
-                            <div class="col col-4 service">
+                            <div class="service__item">
                                 <div class="service__img">
                                     <img src="img/service_img.png">
                                 </div>
@@ -149,7 +166,7 @@
                     </div>
                 </section>
 
-                <section class="section">
+                <section id="price" class="section">
                     <div class="container">
                         <h2 class="section__title">Услуги и цены</h2>
                         <div class="price">
@@ -231,7 +248,7 @@
                     </div>
                 </section>
 
-                <section class="section section__masters">
+                <section id="masters" class="section section__masters">
                     <div class="container">
                         <h2 class="section__title">Мастера</h2>
                         <div class="masters">
@@ -275,7 +292,7 @@
                     </div>
                 </section>
 
-                <section class="section">
+                <section id="works" class="section">
                     <div class="container">
                         <h2 class="section__title">Наши работы</h2>
                         <div class="works__carousel">
@@ -365,4 +382,13 @@
             </footer>
         </div>
     </body>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
 </html>

@@ -121,4 +121,37 @@
         display: block;
         margin: auto;
     }
+
+    @media screen and (max-width: 768px) {
+        &__list {
+            padding-bottom: 50px;
+        }
+    
+        &__btns {
+            display: none;
+        }
+    
+        &__brends-title {
+            padding-bottom: 10px;
+        }
+    
+        &__brends-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
+        }
+    
+        &__brends-item {
+            display: flex;
+            padding-top: 20px;
+            padding-right: 50px;
+            opacity: 0.5;
+        }
+    
+        &__brends-item img {
+            display: block;
+            margin: auto;
+        }
+    }
 }

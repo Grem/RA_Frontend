@@ -18,13 +18,28 @@
     }
     
     &__descr {
-        max-width: 568px;
         width: 100%;
+        text-align: justify;
     }
     
     &__video {
-        max-width: 442px;
         width: 100%;
         text-align: right;
     }
+
+    @media screen and (max-width: 768px) {
+        & {
+            flex-direction: column-reverse;
+        }
+    
+        &__video {
+            text-align: center;
+        }
+    
+        &__descr {
+            text-align: justify;
+            width: fit-content;
+        }
+    }
+    
 }
